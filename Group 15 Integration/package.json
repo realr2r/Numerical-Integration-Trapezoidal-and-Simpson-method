@@ -1,0 +1,14 @@
+{
+  "name": "numanal",
+  "version": "1.0.0",
+  "main": "Lagrange.js",
+  "scripts": {},
+  "author": "Berces, Damasco, Espiritu",
+  "license": "ISC",
+  "dependencies": {
+    "mathjax": "^3.1.4",
+    "mathjs": "^9.3.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

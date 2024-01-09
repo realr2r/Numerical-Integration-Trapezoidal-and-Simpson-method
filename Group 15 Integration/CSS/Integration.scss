@@ -1,0 +1,159 @@
+* {
+    &::-webkit-scrollbar-track {
+        background: #ea7a89;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #280006;
+    }
+}
+
+nav {
+    background-color: #ea7a89;
+    .links {
+        a {
+            &.active,
+            &:hover {
+            color: #ea7a89;
+            }
+        }
+    }   
+}
+
+main {
+    section {
+        border: 2px dashed #280006;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:nth-of-type(1) {
+            p {
+                text-align: center;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+footer {
+    background-image: linear-gradient(to top, #ea7a89, #ffc5cd, white);
+}
+
+.inputs-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas:
+    "blank1 integral bArea blank2"
+    "nArea integral eqArea dxArea"
+    "blank3 integral aArea blank4"
+    "blank5 blank5 solveBtnArea blank6"
+    ;
+    align-items: center;
+    justify-content: center;
+
+    .decoration {
+        border: 1px solid #280006;
+    }
+    
+    button {
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.integral-symbol {
+    grid-area: integral;
+    font-size: 3rem;
+}
+
+.small-decoration {
+    border-radius: 5px;
+    padding: .3em;
+    border: 1px solid #280006;
+
+    input {
+        border: none;
+        outline: none;
+    }
+
+}
+
+.answers-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    .answer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        min-width: 70%;
+        padding: 1em;
+        margin-bottom: .5em;
+        border: 1px solid #ea7a89;
+        border-bottom: 5px solid #ea7a89;
+        border-radius: 5px;
+
+        h2 {
+            color: #ea7a89;
+            margin-bottom: 1em;
+        }
+
+        .relative-error-title {
+            margin-bottom: .6em;
+            color: #ea7a89;
+        }
+
+        span {
+            margin-bottom: 1em;
+
+            &:nth-of-type(4) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .error-container {
+        color: #ea7a89;
+    }
+}
+
+.continer-n{
+    grid-area: nArea;
+}
+.container-a {
+    grid-area: aArea;
+}
+.continer-eq{
+    grid-area: eqArea;
+}
+.container-b {
+    grid-area: bArea;
+}
+.dx-symbol {
+    grid-area: dxArea;
+    font-size: 1.5rem
+}
+.solve-Btn {
+    margin-top: 1em;
+    grid-area: solveBtnArea;
+    color: #ea7a89;
+    border: 2px solid #ea7a89;
+    border-radius: 5px;
+    padding: .5em 0;
+    background: white;
+    cursor: pointer;
+}

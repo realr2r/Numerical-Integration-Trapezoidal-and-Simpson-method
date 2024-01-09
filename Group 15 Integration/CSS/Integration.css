@@ -1,0 +1,200 @@
+* {
+  /* Handle */
+}
+
+*::-webkit-scrollbar-track {
+  background: #b8b4b4;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #280006;
+}
+
+nav {
+  background-color: #b8b4b4;
+}
+
+nav .links a.active, nav .links a:hover {
+  color: #b8b4b4;
+}
+
+main section {
+  border: 2px dashed #280006;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section:nth-of-type(1) p {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#b8b4b4), color-stop(#ffc5cd), to(white));
+  background-image: linear-gradient(to top, #b8b4b4, #b8b4b4, white);
+}
+
+.inputs-container {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 1fr);
+  -ms-grid-rows: (1fr)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 1fr);
+      grid-template-areas: "blank1 integral bArea blank2" "nArea integral eqArea dxArea" "blank3 integral aArea blank4" "blank5 blank5 solveBtnArea blank6";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inputs-container .decoration {
+  border: 1px solid #280006;
+}
+
+.inputs-container .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.integral-symbol {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: integral;
+  font-size: 3rem;
+}
+
+.small-decoration {
+  border-radius: 5px;
+  padding: .3em;
+  border: 1px solid #280006;
+}
+
+.small-decoration input {
+  border: none;
+  outline: none;
+}
+
+.answers-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.answers-container .answer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 70%;
+  padding: 1em;
+  margin-bottom: .5em;
+  border: 1px solid #b8b4b4;
+  border-bottom: 5px solid #b8b4b4;
+  border-radius: 5px;
+}
+
+.answers-container .answer-container h2 {
+  color: #b8b4b4;
+  margin-bottom: 1em;
+}
+
+.answers-container .answer-container .relative-error-title {
+  margin-bottom: .6em;
+  color: #b8b4b4;
+}
+
+.answers-container .answer-container span {
+  margin-bottom: 1em;
+}
+
+.answers-container .answer-container span:nth-of-type(4) {
+  margin-bottom: 0;
+}
+
+.answers-container .error-container {
+  color: #b8b4b4;
+}
+
+.continer-n {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nArea;
+}
+
+.container-a {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: aArea;
+}
+
+.continer-eq {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: eqArea;
+}
+
+.container-b {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: bArea;
+}
+
+.dx-symbol {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: dxArea;
+  font-size: 1.5rem;
+}
+
+.solve-Btn {
+  margin-top: 1em;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: solveBtnArea;
+  color: #b8b4b4;
+  border: 2px solid #b8b4b4;
+  border-radius: 5px;
+  padding: .5em 0;
+  background: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Integration.css.map */

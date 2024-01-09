@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../CSS/Integration.css">
+
+	<script src="../node_modules/mathjax/es5/tex-mml-chtml.js"></script>
+	<script src="../node_modules/mathjs/lib/browser/math.js"></script>
+
+	<title>Integration</title>
+</head>
+
+<body>
+	<header>
+	</header>
+
+	<nav>
+		<div class="title">
+			<h1>
+				&lt Group 15 Integration Calculator &gt
+			</h1>
+		</div>
+
+	</nav>
+
+	<main>
+		<section>
+			<p>This is a calculator that uses both the Trapezoidal and Simpson's rules of integration.
+			</p>
+			<div class="inputs-container">
+				<span class="integral-symbol">$$\int_{a}^{b}$$</span>
+				<div class="input-container continer-n">
+					<label for="input-n">$$n$$</label>
+					<div class="decoration">
+						<input type="text" name="input-n">
+					</div>
+				</div>
+				<div class="small-decoration container-a">
+					<input type="text" name="input-a">
+				</div>
+				<div class="small-decoration container-b">
+					<input type="text" name="input-b">
+				</div>
+				<div class="input-container continer-eq">
+					<label for="input-equation">$$f(x)$$</label>
+					<div class="decoration">
+						<input type="text" name="input-equation">
+					</div>
+				</div>
+				<span class="dx-symbol">$$dx$$</span>
+
+				<button class="solve-Btn">
+					Calculate
+				</button>
+			</div>
+		</section>
+
+		<section>
+			<div class="answers-container"></div>
+		</section>
+	</main>
+
+	<footer>
+		<h2>Members</h2>
+
+		<div class="members">
+			<div class="member">
+				<h3>Berces, Arthur William</h3>
+			</div>
+
+			<div class="member">
+				<h3>Damasco, Vinard James</h3>
+			</div>
+
+			<div class="member">
+				<h3>Espiritu, Kyle Gabrielle</h3>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script src="../JavaScript/Integration.js"></script>
+
+</html>
